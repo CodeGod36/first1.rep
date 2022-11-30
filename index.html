@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- displays site properly based on user's device -->
 
-    <link rel="icon" type="image/png" sizes="32x32" ref="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
     <title>Frontend Mentor | QR code component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
         body {
             margin: auto;
             max-width: 375px;
@@ -34,9 +35,8 @@
         }
         
         .text {
-            font-family: "Outfit";
-            src: url(https://fonts.google.com/specimen/Outfit);
-            font-weight: 400, 700;
+            font-family: "Outfit", Serif;
+            font-weight: 400;
             text-align: center;
         }
         
@@ -52,9 +52,9 @@
         
         .container {
             background-color: white;
-            border-radius: 20px;
+            border-radius: 21px;
             padding: 10px;
-            margin-block: 30%;
+            margin-block: 40px;
         }
     </style>
 </head>
@@ -63,12 +63,13 @@
     <div class="container">
         <img src="./images/image-qr-code.png" alt="QR Code">
 
-        <div class="text">
+        <article class="text">
             <p>
                 <h1>Improve your front-end <br>skills by building projects</h1>
             </p>
             <p class="h2">Scan the QR code to visit Frontend <br>Mentor and take your coding skills to <br>the next level</p>
-        </div>
+        </article>
+
     </div>
 
     <footer>
